@@ -38,11 +38,22 @@
             padding: 20px;
         }
 
+        /* UPDATED: Added Flexbox to align logo image and text */
         .logo {
             color: #00b4d8;
             font-size: 24px;
             font-weight: 700;
             letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* ADDED: Logo image sizing rules */
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
         }
 
         .logo span {
@@ -381,7 +392,10 @@
 
     <header>
         <div class="nav-container">
-            <div class="logo">MEP Drafting <span>Cafe</span></div>
+            <div class="logo">
+                <img src="logo.png" alt="MEP Drafting Cafe Logo">
+                MEP Drafting <span>Cafe</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
